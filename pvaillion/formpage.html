@@ -1,0 +1,60 @@
+<html>
+<head>
+	<title></title>
+</head>
+<style>
+html{
+	font-size:1.5em;
+}
+div#wrapper{
+position:absolute;
+width:auto;
+height:auto;
+left:35%;
+}
+p{
+	text-align:center;
+}
+input{
+left:250px;
+width:250px;
+}
+#spec{
+font-size:0.5em;
+font-family:italic;
+}
+</style>
+<body>
+	<div id="wrapper">
+		<div id="part1">
+			<form>
+				<p>DO YOU UNDERSTAND?</p>
+				<input type="radio" required name="question">Yes<br>
+				<input type="radio" required name="question">No<br>
+				<input type="radio" required name="question">Maybe<br>
+			<p>First Name:</p><input required type="text" placeholder="'Joan'" name="Firstname"><br>
+			<p>Last Name:</p><input required type"text1" placeholder="'Popular'" name="lastname"><br>
+			<p>GENDER?</p>
+				<input type="radio" required name="question2">Yes<br>
+				<input type="radio" required name="question2">No<br>
+				<input type="radio" required name="question2">Maybe<br>
+			<a href='#' onclick="baseAlert()"><p>WHAT IS A META CELEBRITY?</p></a><br>
+			<p>ARE YOU A 'CELEB'????????</p>
+				<input type="radio" required name="question3">Yes<br>
+				<input type="radio" required name="question3">No<br>
+				<input type="radio" required name="question3">No<br>
+			<p>DO YOU AGREE?</p><br>
+			<input type="checkbox" required name='yes3'><p id='spec'>Clicking this Indicates you Agree with The Aformentioned</p><br>
+		</form>
+		<form action="http://google.com">
+			<input type="submit" name="submit" text="Submit" value="gotoogooodgle">
+		</form>
+		</div>
+	</div>
+	<script>
+function baseAlert() {
+    alert("Reminder: A Meta Celebrity is Composed Of Other Celebrities");
+}
+</script>
+</body>
+</html>
