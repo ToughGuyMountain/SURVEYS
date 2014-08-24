@@ -1,11 +1,15 @@
 <html>
 <head>
 	<title>Conan O'Brien's Lucky Organ Show!</title>
+	<script src="jquery.min.js" ></script>
+	<script src="jquery-1.11.0.min.js"></script>
+	<script src="script.js"></script>
+	<link rel="stylesheet" href="style.css"/>
 	<style>
 		#conan{
 			width:100%;
 			margin:auto;
-			position:fixed;
+			position:relative;
 			z-index:-1;
 		}
 		/*animations*/
@@ -84,27 +88,29 @@
 	</style>
 </head>
 <body>
-<img id="conan" src="pngs/conan/conan.png"/>
-<section id="transitions">
-<a href="#" onclick="setTimeout(window.document.location='doyou.html', 5000);">
-	<div id="drakediv">
-		<img id="drake" src="pngs/conan/drake.png"/>
-	</div>
+	<div id="main">
+		<div class="content">
+			<img id="conan" src="pngs/conan/conan.png"/>
+			<section id="transitions">
+				<div id="drakediv">
+					<img id="drake" src="pngs/conan/drake.png"/>
+				</div>
 
-	<div id="kanyediv">
-		<img id="kanye" src="pngs/conan/kanye.png"/>
-	</div>
+				<div id="kanyediv">
+					<img id="kanye" src="pngs/conan/kanye.png"/>
+				</div>
 
-	<div id="lungsdiv">
-		<img id="lungs" src="pngs/conan/lungs.png"/>
-	</div>
+				<div id="lungsdiv">
+					<img id="lungs" src="pngs/conan/lungs.png"/>
+				</div>
 
-	<div id="marthadiv">
-		<img id="martha" src="pngs/conan/martha.png"/>
+				<div id="marthadiv">
+					<img id="martha" src="pngs/conan/martha.png"/>
+				</div>
+			</section>
+		</div>
+		<p>DO YOU UNDERSTAND?</p>
 	</div>
-</a>
-<p>DO YOU UNDERSTAND?</p>
-</section>
 
 </body>
 </html>

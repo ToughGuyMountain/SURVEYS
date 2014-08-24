@@ -4,8 +4,8 @@ $(document).ready(function(){
 	
 	$("#main").height(height);
 
-	$("#content").height("75%");
-	$("#content").width("75%");
+	$(".content").height("75%");
+	$(".content").width("75%");
 
 	moveMug1();
 
