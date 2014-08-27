@@ -10,13 +10,34 @@
 
 	
 	<div id="main">
-		<a href="0"
+		<a href="page2.html">
 		<div class="content" id="page1">
-			<img src="pngs/metacelebrities.png" style="z-index:99;position:relative;top:10em"/>
+			<img src="pngs/metacelebrities.png" style="z-index:99;position:relative;margin-top:50%"/>
 			<img class="mug" id="mug1" src="pngs/omug.png"/>
 			<img class="mug" id="mug2" src="pngs/lmug.png" />
 		</div>
+	</a>
 	</div>
-	
+
+	<script>
+		$(document).ready(function(){
+				moveMug1();
+
+	function moveMug1(){
+		var top = Math.floor((Math.random() * 100 - 50) + 1);
+		var left = Math.floor((Math.random() * 100 - 50) + 1);
+		$("#mug1").animate({
+			top: "+="+top,
+			left: "+="+left
+		},1000);
+		$("#mug2").animate({
+			top:"-="+top,
+			left:"-="+left},
+			1000);
+		moveMug1();
+	}
+		})
+	</script>
+
 </body>
 </html>
