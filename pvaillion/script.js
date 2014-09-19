@@ -8,5 +8,4 @@ $(document).ready(function(){
 	$(".content").width("75%");
 
 
-
 });
